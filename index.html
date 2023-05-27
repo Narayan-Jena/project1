@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="https://kit.fontawesome.com/2e8116b163.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav desktop-menu">
+            <div class="loogo">
+                <img class="logo_img" src="./assets/cloudy.png" />
+                <p>Weather</p>
+            </div>
+            <div class="search_bar">
+                <input type="text" name="location" id="location" class="location-dsk" placeholder="Location" />
+                <button class="click-desktop" onclick="searchCity()">Click</button>
+            </div>
+            <div class="location_button">
+                <button>Curent location</button>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="logo-icon">
+                <img src="./assets/cloudy.png" alt="" class="logo"/>
+                <p>Weather</p>
+            </div>
+            <div class="search-section">
+                <img class="search-btn" src="./assets/search.png" alt="location"/>
+                <img class="location-btn" src="./assets/location.png" alt="location"/>
+                <div class="search_bar mobile" style="display:none;">
+                    <input type="text" name="location" id="location-mbl" placeholder="Location " />
+                    <button class="click-mbl">Click</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <main>
+            <div class="sec_one">
+                <div class="curent_weather">
+               
+                </div>
+                <div class="today_highlights">
+                    <p class="today_highlights_heading_tag">Today Highlights</p>
+    
+                    <div class="today_highlights_1st_row">
+                        <div class="air_quality">
+                            <div class="heading">
+                                <p>Today Temprature</p>
+                                <!-- <p id="good">Good</p> -->
+                            </div>
+    
+                            <div class="air_quality_index">
+                                <p class="temp-p">Temprature</p>
+                                <div class="temp-graph">
+                                    <div class="temp-graph__one">
+                                    </div>
+                                    <div class="temp-name">
+                                    </div> 
+                                </div>
+                                  
+                                    <!-- <p class="day-p"></p> -->
+                            </div>
+                        </div>
+    
+                        <div class="sun_rise_and_set">
+                            <p class="heading">Sun rise and Sun set</p>
+                            <div class="sun">
+                                <div class="sun_rise">
+                                    <img class="weather_img" src="./assets/01d.png" />
+                                    <div class="rise">
+                                        <p>Sun rise</p>
+                                        <p class="result">6:46 AM</p>
+                                    </div>
+                                </div>
+    
+                                <div class="sun_set">
+                                    <img class="weather_img" src="./assets/01n.png" />
+                                    <div class="set">
+                                        <p>Sun set</p>
+                                        <p class="result">5:46 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="today_highlights_2nd_row">
+                        <div class="humidity second_row">
+                            <p class="today_highlights_heading">Humidity</p>
+                            <img class="weather_img" src="./assets/cloudy.png" />
+                            <p class="result">82%</p>
+                        </div>
+                        <div class="pressure second_row">
+                            <p class="today_highlights_heading">Pressure</p>
+                            <img class="weather_img" src="./assets/cloudy.png" />
+                            <p class="result">1025hPa</p>
+                        </div>
+                        <div class="visibility second_row">
+                            <p class="today_highlights_heading">Visibility</p>
+                            <img class="weather_img" src="./assets/cloudy.png" />
+                            <p class="result">10km</p>
+                        </div>
+                        <div class="feels_like second_row">
+                            <p class="today_highlights_heading">Feels Like</p>
+                            <img class="weather_img" src="./assets/cloudy.png" />
+                            <p class="result">2°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <table class="forecast_table">
+                        <caption>
+                            6 Days Forecast
+                        </caption>
+                       
+                    </table>
+                </div>
+            </div>
+            
+            
+
+            
+
+            <div class="today_at">
+                <div class="time">
+                   
+                </div>
+                <div class="wind">
+                    
+                </div>
+            </div>
+        </main>
+    </header>
+    <footer>
+        <p>The Weather App</p>
+        <p class="end">@CopyRight By Narayan Jena</p>
+        <script src="./js/index.js"></script>
+    </footer>
+</body>
+
+</html>
